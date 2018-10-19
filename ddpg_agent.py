@@ -19,7 +19,7 @@ WEIGHT_DECAY = 0        # L2 weight decay
 UPDATE_EVERY = 20       # timesteps between updates
 NUM_UPDATES = 10        # num of update passes when updating
 EPSILON = 1.0           # Epsilon for the noise process added to the actions
-EPSILON_DECAY = 1e-5    # Decay for epsilon above
+EPSILON_DECAY = 1e-6    # Decay for epsilon above
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 

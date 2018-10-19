@@ -54,7 +54,7 @@ L2 weight decay | 0
 UPDATE_EVERY | 20
 NUM_UPDATES | 10
 EPSILON | 1.0
-EPSILON_DECAY | 1e-5
+EPSILON_DECAY | 1e-6
 
 6. Network architecture:
     - Both the actor and critic are implemented using fully connected networks, with 2 hidden layers of 128 units each, batch normalization and Relu activation function, with Tanh activation at the last layer.
