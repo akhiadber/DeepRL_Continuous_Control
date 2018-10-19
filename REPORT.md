@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/15965062/47237461-d2a90b00-d3e7-11e8-96a0-f0c9a0b7ad1d.png "Algorithm"
-[image2]: add_plot_rewards "Plot of Rewards"
+[image2]: https://user-images.githubusercontent.com/15965062/47242074-67b30080-d3f6-11e8-8dfe-cb9c1492db18.png "Plot of Rewards"
 
 # Report - Deep RL Project: Continuous Control
 
@@ -55,33 +55,35 @@ UPDATE_EVERY | 20
 NUM_UPDATES | 10
 EPSILON | 1.0
 EPSILON_DECAY | 1e-6
+NOISE_SIGMA | 0.05
 
 6. Network architecture:
     - Both the actor and critic are implemented using fully connected networks, with 2 hidden layers of 128 units each, batch normalization and Relu activation function, with Tanh activation at the last layer.
     - Input and output layers sizes are determined by the state and action space.
-    - Training time until solving the environment takes around 90 minutes on AWS p2 instance with Tesla k80 GPU.
+    - Training time until solving the environment takes around 38 minutes on AWS p2 instance with Tesla k80 GPU.
     - See 'model.py' for more details.
 
 ### Plot of results
 
-As seen below, the agent solves the environment after ~135 episodes, and achieves best average score of above 37.
+As seen below, the environment is solved after 129 episodes (average over agents over episodes 30-129 > 30.0), and achieves best average score of above 37.
 
 Episodes | Average Score | Max | Min | Time
 --- | --- | --- | --- | ---
 ... | ... | ... | ... | ...
-Episode 151 | Average Score: 33.59 | Max: 39.64 | Min: 30.34 | Time: 23.88
-Episode 152 | Average Score: 33.76 | Max: 39.45 | Min: 30.88 | Time: 23.98
-Episode 153 | Average Score: 33.92 | Max: 38.23 | Min: 20.35 | Time: 23.96
-Episode 154 | Average Score: 34.08 | Max: 38.29 | Min: 27.17 | Time: 23.83
-Episode 155 | Average Score: 34.24 | Max: 39.54 | Min: 30.72 | Time: 23.93
-Episode 156 | Average Score: 34.40 | Max: 39.38 | Min: 34.30 | Time: 23.97
-Episode 157 | Average Score: 34.55 | Max: 39.53 | Min: 34.66 | Time: 23.94
-Episode 158 | Average Score: 34.69 | Max: 39.40 | Min: 31.07 | Time: 24.11
-Episode 159 | Average Score: 34.85 | Max: 39.59 | Min: 33.47 | Time: 24.00
-Episode 160 | Average Score: 35.00 | Max: 39.47 | Min: 30.89 | Time: 24.00
-Episode 160	| Average Score: 35.00 | | |  
+Episode 121 | Average Score: 27.35 | Max Score: 39.58 | Min Score: 34.95 | Time per Episode: 18.99
+Episode 122 | Average Score: 27.71 | Max Score: 39.64 | Min Score: 31.14 | Time per Episode: 19.19
+Episode 123 | Average Score: 28.08 | Max Score: 39.66 | Min Score: 35.80 | Time per Episode: 19.29
+Episode 124 | Average Score: 28.43 | Max Score: 39.68 | Min Score: 29.57 | Time per Episode: 19.14
+Episode 129 | Average Score: 30.18 | Max Score: 39.46 | Min Score: 10.90 | Time per Episode: 18.94
+--- | --- | --- | --- | ---
+... | ... | ... | ... | ...
+Episode 184 | Average Score: 37.48 | Max Score: 39.36 | Min Score: 32.88 | Time per Episode: 18.89
 
-Environment solved in 137 episodes!	Average Best Score: 35.00
+Environment solved in 129 episodes!	Average Score: 30.18, total training time: 2250.4 seconds
+
+Episode 184, Average Score: 37.48, Max Score: 39.36, Min Score: 32.88, Time per Episode: 18.89
+
+Environment best average in 184 episodes!	Average Score: 37.48
 
 ![Plot of Rewards][image2]
 
