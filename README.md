@@ -100,13 +100,13 @@ Follow the instructions in `Continuous_Control.ipynb` to see the training and pe
 
 ### (Optional) Challenge: Crawler Environment
 
-After you have successfully completed the project, you might like to solve the more difficult **Crawler** environment.
+Next, I'll try to solve the more difficult **Crawler** environment.
 
 ![Crawler][image2]
 
 In this continuous control environment, the goal is to teach a creature with four legs to walk forward without falling.  
 
-You can read more about this environment in the ML-Agents GitHub [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler).  To solve this harder task, you'll need to download a new Unity environment.  (**Note**: Udacity students should not submit a project with this new environment.)
+You can read more about this environment in the ML-Agents GitHub [here](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler).  To solve this harder task, you'll need to download a new Unity environment.
 
 You need only select the environment that matches your operating system:
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Crawler/Crawler_Linux.zip)
