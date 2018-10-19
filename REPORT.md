@@ -1,7 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/15965062/47237461-d2a90b00-d3e7-11e8-96a0-f0c9a0b7ad1d.png "Algorithm"
-[image2]: https://user-images.githubusercontent.com/15965062/47242074-67b30080-d3f6-11e8-8dfe-cb9c1492db18.png "Plot of Rewards"
+[image2]: https://user-images.githubusercontent.com/15965062/47245012-40613100-d400-11e8-904e-5b732c8c2871.png "Plot of Rewards"
 
 # Report - Deep RL Project: Continuous Control
 
@@ -75,13 +75,10 @@ Episode 122 | Average Score: 27.71 | Max Score: 39.64 | Min Score: 31.14 | Time 
 Episode 123 | Average Score: 28.08 | Max Score: 39.66 | Min Score: 35.80 | Time per Episode: 19.29
 Episode 124 | Average Score: 28.43 | Max Score: 39.68 | Min Score: 29.57 | Time per Episode: 19.14
 Episode 129 | Average Score: 30.18 | Max Score: 39.46 | Min Score: 10.90 | Time per Episode: 18.94
---- | --- | --- | --- | ---
 ... | ... | ... | ... | ...
 Episode 184 | Average Score: 37.48 | Max Score: 39.36 | Min Score: 32.88 | Time per Episode: 18.89
 
 Environment solved in 129 episodes!	Average Score: 30.18, total training time: 2250.4 seconds
-
-Episode 184, Average Score: 37.48, Max Score: 39.36, Min Score: 32.88, Time per Episode: 18.89
 
 Environment best average in 184 episodes!	Average Score: 37.48
 
@@ -89,7 +86,7 @@ Environment best average in 184 episodes!	Average Score: 37.48
 
 ###  Ideas for future work
 
-1. This DDPG implementation was very dependent on hyperparameter settings and random seed. Solving the environment using PPO, TRPO or D4PG might allow a more robust solution to this task.
+1. This DDPG implementation was very dependent on hyperparameter, noise settings and random seed. Solving the environment using PPO, TRPO or D4PG might allow a more robust solution to this task.
 
 2. Solving the more challenging [Crawler](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#crawler) environment using edited versions of these same algorithms. 
 
